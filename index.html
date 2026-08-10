@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calc-box">
+
+  <input type="text" id="screen" value="0" readonly>
+
+  <!-- using a table for the buttons, easy to line them up in rows -->
+  <table>
+    <tr>
+      <td><button class="clr" onclick="clearScreen()">C</button></td>
+      <td><button onclick="delLast()">DEL</button></td>
+      <td><button class="op" onclick="press('%')">%</button></td>
+      <td><button class="op" onclick="press('/')">/</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="press('7')">7</button></td>
+      <td><button onclick="press('8')">8</button></td>
+      <td><button onclick="press('9')">9</button></td>
+      <td><button class="op" onclick="press('*')">*</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="press('4')">4</button></td>
+      <td><button onclick="press('5')">5</button></td>
+      <td><button onclick="press('6')">6</button></td>
+      <td><button class="op" onclick="press('-')">-</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="press('1')">1</button></td>
+      <td><button onclick="press('2')">2</button></td>
+      <td><button onclick="press('3')">3</button></td>
+      <td><button class="op" onclick="press('+')">+</button></td>
+    </tr>
+    <tr>
+      <td colspan="2"><button onclick="press('0')">0</button></td>
+      <td><button onclick="press('.')">.</button></td>
+      <td><button class="eq" onclick="showResult()">=</button></td>
+    </tr>
+  </table>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
