@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Image Gallery</title>
+  <meta name="description" content="A responsive image gallery with a fullscreen lightbox viewer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">Collection</p>
+    <h1>My Image Gallery</h1>
+    <p class="subtitle">Click any photo to view it fullscreen. Use the arrow keys to browse.</p>
+  </header>
+
+  <main class="gallery" id="gallery">
+    <figure class="gallery-item"><img src="images/img1.jpg" alt="Gallery photo 1" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img2.jpg" alt="Gallery photo 2" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img3.jpg" alt="Gallery photo 3" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img4.jpg" alt="Gallery photo 4" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img5.jpg" alt="Gallery photo 5" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img6.jpg" alt="Gallery photo 6" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img7.jpg" alt="Gallery photo 7" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img8.jpg" alt="Gallery photo 8" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img9.jpg" alt="Gallery photo 9" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img10.jpg" alt="Gallery photo 10" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img11.jpg" alt="Gallery photo 11" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img12.jpg" alt="Gallery photo 12" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img13.jpg" alt="Gallery photo 13" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img14.jpg" alt="Gallery photo 14" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img15.jpg" alt="Gallery photo 15" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img16.jpg" alt="Gallery photo 16" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img17.jpg" alt="Gallery photo 17" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img18.jpg" alt="Gallery photo 18" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img19.jpg" alt="Gallery photo 19" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img20.jpg" alt="Gallery photo 20" loading="lazy" /></figure>
+    <figure class="gallery-item"><img src="images/img21.jpg" alt="Gallery photo 20" loading="lazy" /></figure>
+  </main>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button id="close" class="lb-btn lb-close" aria-label="Close">&times;</button>
+    <button id="prev" class="lb-btn lb-prev" aria-label="Previous image">&#10094;</button>
+    <img id="lightbox-img" src="" alt="" />
+    <button id="next" class="lb-btn lb-next" aria-label="Next image">&#10095;</button>
+    <p id="counter" class="lb-counter"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
