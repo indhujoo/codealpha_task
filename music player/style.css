@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #002efd, #ff0188);
+}
+
+.music-player {
+    width: 350px;
+    padding: 30px;
+    text-align: center;
+    background: rgb(9, 2, 55);
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.music-player h1 {
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.album {
+    
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+}
+
+.album.spinning {
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.music-icon { border-radius: 100px;
+    align-items: center;
+    font-size: 70px;
+}
+.round-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#song-title {
+    color: #f3eded;
+    margin-bottom: 8px;
+}
+
+#artist {
+    color: #f3ebeb;
+    margin-bottom: 20px;
+}
+
+#progress {
+    width: 100%;
+    cursor: pointer;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.controls button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #eee;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.controls button:hover {
+    transform: scale(1.1);
+}
+
+.controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.play-btn {
+    width: 65px !important;
+    height: 65px !important;
+    background:linear-gradient(135deg, #002efd, #ff0188) !important;
+    color: white;
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#volume {
+    flex: 1;
+}
+
+#status {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #b00020;
+    min-height: 16px;
+}
